@@ -62,3 +62,5 @@ px.scatter(x=encoded_2dim[:, 0], y=scaled_data[:, 1], color=y)
 
 # %%
 fig = px.scatter_3d(feat, x="X1", y="X2", z="X3", color=y)
+fig.show()
+# %%

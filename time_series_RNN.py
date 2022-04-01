@@ -14,7 +14,7 @@ plt.rcParams["figure.figsize"] = (12, 8)
 # %%
 # Economic data fred
 
-df = pd.read_csv("../DATA/RSCCASN.csv", parse_dates=True, index_col="DATE")
+df = pd.read_csv("_Data/RSCCASN.csv", parse_dates=True, index_col="DATE")
 df.columns = ["Sales"]
 df.plot()
 test_size = 18  # 1.5 years
@@ -133,4 +133,8 @@ forecast_df.plot(ax=ax)
 ax = df.plot()
 forecast_df.plot(ax=ax)
 plt.xlim("2018-01-01", "2020-12-01")
+# %%
+
+# %%
+
 # %%

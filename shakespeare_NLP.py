@@ -13,7 +13,7 @@ from tensorflow.keras.models import Sequential
 # from tensorflow.keras.models import load_model
 
 # %%
-path_to_file = "../06-NLP-and-Text-Data/shakespeare.txt"
+path_to_file = "_Data/shakespeare.txt"
 text = open(path_to_file).read()
 vocab = sorted(set(text))
 vocab_size = len(vocab)

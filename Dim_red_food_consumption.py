@@ -13,7 +13,7 @@ plt.rcParams["figure.figsize"] = (12, 8)
 
 
 # %%
-df = pd.read_csv("../DATA/UK_foods.csv", index_col="Unnamed: 0")
+df = pd.read_csv("_Data/UK_foods.csv", index_col="Unnamed: 0")
 df = df.T
 # %%
 sns.heatmap(data=df.T)
@@ -47,4 +47,6 @@ result = result.reset_index()
 sns.scatterplot(data=result, x="C1", y="C2", hue="index")
 
 px.scatter(data_frame=result, x="C1", y="C2", color="index")
+# %%
+result.head()
 # %%
